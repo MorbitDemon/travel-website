@@ -31,8 +31,15 @@ ul{
     text-shadow: 1px 1px 17px black;
 }
 
-header a {
-    color: goldenrod;
+header li a {
+    color: gold;
+}
+
+header li a:hover{
+    background-color: gold;
+    color: black;
+    padding: 10px;
+    border-radius: 5px;
 }
 
 nav ul{
@@ -40,6 +47,6 @@ nav ul{
 }
 
 nav li{
-    margin: 20px;
-    /* margin-left: 20px; */
+    /* margin: 20px; */
+    margin-left: 20px;
 }
