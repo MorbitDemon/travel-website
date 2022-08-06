@@ -7,10 +7,46 @@
 
 #hero-content{
     text-align: center;
-    width: 900px;
+    width: 800px;
     background-color: #332f2fcc;
     box-shadow: 2px 4px 8px rgb(68, 67, 67);
     border-radius: 8px;
     padding: 50px 0;
     margin: 0 auto 0 auto ;
+    position: relative;
+    top: 200px;
+}
+
+#hero-content h1{
+    font-family: 'Raleway', sans-serif;
+    color: white;
+    font-size: 50px;
+    text-transform: uppercase;
+    margin: -5px auto 0 auto;
+}
+
+#hero-content p {
+    font-size: 20px;
+    color: white;
+    text-transform: uppercase;
+    margin-bottom: 30px;
+    font-weight: 300;
+}
+
+#hero-content a {
+    font-size: 20px;
+    font-weight: bold;
+    color: black;
+    background-color: gold;
+    padding: 12px 24px;
+    border-radius: 8px;
+    /* box-shadow: 2px 4px 4px rgb(68, 67, 67) */
+}
+
+#hero-content a:hover{
+    background-color: rgb(236, 184, 51);
+}
+
+a:active{
+    background-color: rgb(236, 184, 51);
 }
