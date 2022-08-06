@@ -40,7 +40,7 @@ header li a {
     color: gold;
     font-size: 20px;
     padding: 12px;
-    text-shadow: 1px 1px 10px black;
+    text-shadow: 1px 1px 6px black;
 }
 
 header li a:hover{
@@ -48,6 +48,7 @@ header li a:hover{
     color: black;
     padding: 12px;
     border-radius: 5px;
+    text-shadow: none;
 }
 
 nav ul{
