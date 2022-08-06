@@ -47,6 +47,50 @@
     background-color: rgb(236, 184, 51);
 }
 
-a:active{
+#hero-content a:active{
     background-color: rgb(236, 184, 51);
+}
+
+#highlights{
+    text-align: center;
+    background-color: #332f2ff1;
+    color: white;
+}
+
+#highlights h2{
+    text-transform: uppercase;
+    font-size: 40px;
+    margin-top: 0;
+    padding: 10px;
+    padding-top: 30px;
+}
+
+#destinations{
+    display: flex;
+    width: 90%;
+    margin: auto;
+    justify-content: space-evenly;
+    margin-bottom: 40px;
+}
+
+.destinations img{
+    height: 200px;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.destinations p{
+    font-size: 17px;
+}
+
+.destinations a{
+    color: gold;
+}
+
+.destinations a:hover{
+    background-color: gold;
+    color: black;
+    padding: 2px 0;
+    border-radius: 5px;
 }
