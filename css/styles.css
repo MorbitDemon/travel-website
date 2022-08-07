@@ -87,12 +87,18 @@
     color: gold;
 }
 
-.destinations .image-link:hover{
+.image-link:hover{
     /* border: 2px solid gold; */
-    padding: 1px;
+    padding: 2px;
+    transition: 1s;
 }
 
-.destinations .highlight-link:hover{
+.image-link:not(:hover){
+    padding: 0;
+    transition: 0.3s;
+}
+
+.highlight-link:hover{
     background-color: gold;
     color: black;
     padding: 2px 0;
