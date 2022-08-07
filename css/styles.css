@@ -88,7 +88,12 @@
     color: gold;
 }
 
-.destinations a:hover{
+.destinations .image-link:hover{
+    /* border: 2px solid gold; */
+    padding: 1px;
+}
+
+.destinations .highlight-link:hover{
     background-color: gold;
     color: black;
     padding: 2px 0;
