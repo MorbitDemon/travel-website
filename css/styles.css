@@ -53,7 +53,7 @@
 
 #highlights{
     text-align: center;
-    background-color: #332f2ff1;
+    background: linear-gradient(170deg, #332f2ff1, #201f1ff1);
     color: white;
     padding: 24px; /* we add padding here to eliminate a margin collapsing bewtween h2 and the header section*/
 }
