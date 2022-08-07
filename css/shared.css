@@ -54,3 +54,22 @@ header li a:hover{
 nav ul{
     display: flex;
 }
+
+footer{
+    background: linear-gradient(45deg, goldenrod, rgb(255, 196, 0));
+}
+
+footer ul{
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+}
+
+footer li {
+    width: 80px;
+    margin: 20px 20px;
+}
+
+footer img{
+    width: 100%;
+}
