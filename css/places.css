@@ -8,8 +8,15 @@ header {
 }
 
 main ul {
-  width: 800px;
-  margin: 0 auto;
+  width: 1200px;
+  margin: 0 auto 48px auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px 20px;
+}
+
+li:nth-of-type(3) {
+  grid-column: 1 / span 2;
 }
 
 main li {
@@ -17,7 +24,6 @@ main li {
   background-color: white;
   border-radius: 6px;
   overflow: hidden;
-  justify-content: space-between;
 }
 
 main li img {
@@ -31,26 +37,20 @@ main li img {
   flex-direction: column;
   padding: 24px;
   justify-content: space-between;
+  flex: auto;
 }
 
 .actions {
-  display: flex;
-  justify-content: flex-end;
-  padding: 5px;
-}
-
-.actions p {
-  font-size: 20px;
+  text-align: right;
 }
 
 .actions a {
     color: gold;
-    border-radius: 4px;
-    padding: 2px;
+    border-radius: 6px;
+    padding: 6px;
 }
 
 .actions a:hover{
     background-color: #e9e5e5f1;
-    border-radius: 4px;
     color: goldenrod;
 }
