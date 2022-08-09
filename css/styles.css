@@ -89,12 +89,12 @@
 
 .image-link:hover{
     /* border: 2px solid gold; */
-    padding: 2px;
+    padding: 0;
     transition: 1s;
 }
 
 .image-link:not(:hover){
-    padding: 0;
+    padding: 2px;
     transition: 0.5s;
 }
 
