@@ -36,7 +36,7 @@ ul{
     text-shadow: 1px 1px 6px black;
 }
 
-header li a {
+header nav a {
     color: gold;
     font-size: 20px;
     padding: 12px;
