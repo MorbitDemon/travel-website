@@ -8,8 +8,8 @@ header {
 }
 
 main ul {
-  width: 1200px;
-  margin: 0 auto 48px auto;
+  width: 75%;
+  margin: 0 auto 3rem auto;
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 20px 20px;
@@ -35,15 +35,15 @@ main li {
 }
 
 main li img {
-  width: 300px;
-  height: 280px;
+  width: 18.75rem;
+  height: 17.5rem;
   object-fit: cover;
 }
 
 .item-content {
   display: flex;
   flex-direction: column;
-  padding: 24px;
+  padding: 1.5rem;
   justify-content: space-between;
   flex: auto;
 }
@@ -53,9 +53,9 @@ main li img {
 }
 
 .actions a {
-    color: gold;
+    color: var(--color-links-900);
     border-radius: 6px;
-    padding: 6px;
+    padding: 0.4rem;
 }
 
 .actions a:hover{

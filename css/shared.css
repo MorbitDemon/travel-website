@@ -1,5 +1,10 @@
+html{
+    --color-links-900: rgb(255, 215, 0);
+    --font-main: 'Quicksand', sans-serif;
+}
+
 body{
-    font-family: 'Quicksand', sans-serif;
+    font-family: var(--font-main);
     margin: 0;
 }
 
@@ -7,7 +12,7 @@ header{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 15px 60px;
+    padding: 0.9rem 3.75rem;
     position: absolute;
     width: 100%;
     box-sizing: border-box;
@@ -15,7 +20,6 @@ header{
     left: 0;
 }
 
-/* ul  */
 a {
     text-decoration: none;
 }
@@ -28,25 +32,25 @@ ul{
 
 #page-logo a {
     font-family: 'Pacifico', sans-serif;
-    padding: 10px;
-    font-size: 50px;
+    padding: 0.6rem ;
+    font-size: 3.1rem;
     /* text-decoration: none; */
-    color: gold;
+    color: var(--color-links-900);
     text-transform: uppercase;
     text-shadow: 1px 1px 6px black;
 }
 
 header nav a {
-    color: gold;
-    font-size: 20px;
-    padding: 12px;
+    color: var(--color-links-900);
+    font-size: 1.3rem;
+    padding: 0.8rem;
     text-shadow: 1px 1px 6px black;
 }
 
 header li a:hover{
     background-color: gold;
     color: black;
-    padding: 12px;
+    padding: 0.8rem;
     border-radius: 5px;
     text-shadow: none;
 }
@@ -62,12 +66,12 @@ footer{
 footer ul{
     display: flex;
     justify-content: center;
-    padding: 10px;
+    padding: 0.6rem;
 }
 
 footer li {
-    width: 80px;
-    margin: 20px 20px;
+    width: 5%;
+    margin: 1.3rem;
 }
 
 footer img{

@@ -1,5 +1,9 @@
+html{
+    --color-hero-content-hover-900: rgb(236, 184, 51);
+}
+
 #hero{
-    height: 800px;
+    min-height: 50rem;
     background-image: url("../images/places/background.jpg");
     background-position: center;
     background-size: cover;
@@ -7,26 +11,25 @@
 
 #hero-content{
     text-align: center;
-    width: 800px;
+    width: 50rem;
     background-color: #332f2fcc;
-    /* box-shadow: 2px 4px 8px rgb(68, 67, 67); */
     border-radius: 8px;
-    padding: 50px 0;
+    padding: 3.1rem 0;
     margin: 0 auto 0 auto ;
     position: relative;
-    top: 200px;
+    top: 12.5rem;
 }
 
 #hero-content h1{
     font-family: 'Raleway', sans-serif;
     color: white;
-    font-size: 50px;
+    font-size: 3.1rem;
     text-transform: uppercase;
-    margin: -5px auto 0 auto;
+    margin: -0.3rem auto 0 auto;
 }
 
 #hero-content p {
-    font-size: 20px;
+    font-size: 1.3rem;
     color: white;
     text-transform: uppercase;
     margin-bottom: 30px;
@@ -38,30 +41,29 @@
     font-weight: bold;
     color: black;
     background-color: gold;
-    padding: 12px 24px;
+    padding: 0.8rem 1.5rem;
     border-radius: 8px;
-    /* box-shadow: 2px 4px 4px rgb(68, 67, 67) */
 }
 
 #hero-content a:hover{
-    background-color: rgb(236, 184, 51);
+    background-color: var(--color-hero-content-hover-900);
 }
 
 #hero-content a:active{
-    background-color: rgb(236, 184, 51);
+    background-color: var(--color-hero-content-hover-900);
 }
 
 #highlights{
     text-align: center;
     background: linear-gradient(100deg, #272424f1, #201f1ff1);
     color: white;
-    padding: 24px; /* we add padding here to eliminate a margin collapsing bewtween h2 and the header section*/
+    padding: 1.5rem; /* we add padding here to eliminate a margin collapsing bewtween h2 and the header section*/
 }
 
 #highlights h2{
     text-transform: uppercase;
-    font-size: 40px;
-    margin-top: 20px;
+    font-size: 3rem;
+    margin-top: 1.3rem;
 }
 
 #destinations{
@@ -69,38 +71,35 @@
     width: 95%;
     margin: auto;
     justify-content: space-evenly;
-    margin-bottom: 40px;
+    margin-bottom: 3rem;
 }
 
 .destinations img{
-    height: 200px;
+    height: 12.5rem;
     width: 100%;
     object-fit: cover;
     border-radius: 8px;
 }
 
 .destinations p{
-    font-size: 17px;
+    font-size: 1.05;
 }
 
 .destinations a{
     color: gold;
 }
 
-.image-link:hover{
-    /* border: 2px solid gold; */
-    padding: 0;
-    transition: 1s;
+.image-link{
+    transition: transform 0.5s ease-out;
 }
 
-.image-link:not(:hover){
-    padding: 2px;
-    transition: 0.5s;
+.image-link:hover{
+    transform: scale(102%);
 }
 
 .highlight-link:hover{
     background-color: gold;
     color: black;
-    padding: 2px 0;
+    padding: 0.13rem 0;
     border-radius: 5px;
 }
