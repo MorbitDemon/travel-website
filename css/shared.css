@@ -57,10 +57,6 @@ ul {
   color: black;
 }
 
-/* .menu-btn:focus{
-    color: black;
-} */
-
 header nav a {
   color: var(--color-links-700);
   font-size: 1.3rem;
@@ -85,7 +81,6 @@ nav ul {
   position: relative;
   background-color: gold;
   color: black;
-  transition: display 0.5s ease-out;
 }
 
 #side-drawer:target {
@@ -103,7 +98,7 @@ nav ul {
 #side-drawer ul {
   display: flex;
   margin: 0;
-  padding: 25rem 1rem;
+  padding: 10rem 1rem 500rem 1rem;
   align-items: center;
   justify-content: flex-start;
   flex-direction: column;

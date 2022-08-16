@@ -112,10 +112,6 @@ html{
 /* Portrait mode */
 @media (max-width: 48rem){
 
-    #hero-content{
-        
-    }
-
     #hero-content h1{
         font-size: 2rem;
     }

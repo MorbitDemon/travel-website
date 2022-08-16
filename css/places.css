@@ -7,12 +7,30 @@ header {
   position: static;
 }
 
+#side-drawer{
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+}
+
+#side-drawer ul{
+  padding: 4rem 1rem;
+}
+
+main{
+  padding: 0;
+  margin: 0;
+  left: 0;
+}
+
 main ul {
   width: 75%;
   margin: 0 auto 3rem auto;
   display: grid;
   grid-auto-rows: 15rem;
-  grid-template-columns: repeat(auto-fit, minmax(40rem, 2fr));
+  grid-template-columns: repeat(auto-fill, minmax(30rem, 1fr));
   /* grid-template-columns: 1fr 1fr; */
   gap: 1rem;
 }
@@ -63,4 +81,57 @@ main li img {
 .actions a:hover{
     background-color: #e9e5e5f1;
     color: goldenrod;
+}
+
+@media (max-width: 85rem) {
+  main li img{
+    width: 12rem;
+  }
+
+  li:nth-of-type(3) {
+    grid-column: auto;
+  }
+  
+  li:nth-of-type(6) {
+    grid-column: auto;
+  }
+  
+  li:nth-of-type(9) {
+    grid-column: auto;
+  }
+  
+}
+
+@media (max-width: 48rem){
+  main ul{
+    width: 95%;
+    flex-direction: column;
+  }
+
+  main li img{
+    width: 8rem;
+  }
+
+  .item-content{
+    padding: 0.5rem 0 0.5rem 0.5rem;
+  }
+
+  .actions a{
+    padding: 0.2rem;
+  }
+}
+
+@media (max-width: 30rem){
+
+  main ul{
+    grid-template-columns: none;
+  }
+
+  .actions{
+    text-align: center;
+  }
+
+  .item-content{
+    font-size: 0.9rem;
+  }
 }
