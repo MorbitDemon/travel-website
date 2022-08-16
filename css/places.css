@@ -7,7 +7,7 @@ header {
   position: static;
 }
 
-#side-drawer{
+#side-drawer {
   position: fixed;
   width: 100%;
   height: 100%;
@@ -15,11 +15,11 @@ header {
   left: 0;
 }
 
-#side-drawer ul{
+#side-drawer ul {
   padding: 4rem 1rem;
 }
 
-main{
+main {
   padding: 0;
   margin: 0;
   left: 0;
@@ -58,6 +58,11 @@ main li img {
   width: 18.75rem;
   height: 17.5rem;
   object-fit: cover;
+  transition: transform 5s ease-out;
+}
+
+li img:hover {
+  transform: scale(110%);
 }
 
 .item-content {
@@ -70,68 +75,83 @@ main li img {
 
 .actions {
   text-align: right;
+  display: block;
 }
 
 .actions a {
-    color: var(--color-links-700);
-    border-radius: 6px;
-    padding: 0.4rem;
+  display: block;
+  color: var(--color-links-700);
+  border-radius: 6px;
+  padding: 0.4rem;
+  transition: background-color, transform 0.5s ease-out;
 }
 
-.actions a:hover{
-    background-color: #e9e5e5f1;
-    color: goldenrod;
+.actions a:hover {
+  color: goldenrod;
+  transform: translate(1rem, 0);
 }
 
-@media (max-width: 85rem) {
-  main li img{
+@media (max-width: 90rem) {
+  main li img {
     width: 12rem;
   }
 
   li:nth-of-type(3) {
     grid-column: auto;
   }
-  
+
   li:nth-of-type(6) {
     grid-column: auto;
   }
-  
+
   li:nth-of-type(9) {
     grid-column: auto;
   }
-  
 }
 
-@media (max-width: 48rem){
-  main ul{
+@media (max-width: 48rem) {
+  main ul {
     width: 95%;
     flex-direction: column;
   }
 
-  main li img{
+  main li img {
     width: 8rem;
   }
 
-  .item-content{
+  .item-content {
     padding: 0.5rem 0 0.5rem 0.5rem;
   }
 
-  .actions a{
+  .actions a {
     padding: 0.2rem;
   }
+
+  .actions a:hover{
+    transform: translate(0.2rem, 0) ;
+}
 }
 
-@media (max-width: 30rem){
-
-  main ul{
+@media (max-width: 32rem) {
+  main ul {
     grid-template-columns: none;
   }
 
-  .actions{
+  .item-content {
+    font-size: 0.9rem;
+  }
+
+  .actions {
     text-align: center;
   }
 
-  .item-content{
-    font-size: 0.9rem;
+  .actions a:hover {
+    transform: translate(4rem, 0);
+  }
+}
+
+@media (max-width: 21rem) {
+  .actions a:hover {
+    transform: translate(1.5rem, 0);
   }
 }
