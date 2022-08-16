@@ -20,21 +20,25 @@ header {
 }
 
 main {
+  /* Eliminate all margin, padding, etc just in case */
   padding: 0;
   margin: 0;
   left: 0;
 }
 
+/* Grid container */
 main ul {
   width: 75%;
   margin: 0 auto 3rem auto;
   display: grid;
   grid-auto-rows: 15rem;
-  grid-template-columns: repeat(auto-fill, minmax(30rem, 1fr));
-  /* grid-template-columns: 1fr 1fr; */
   gap: 1rem;
+
+  /* To make the grid responsive and easy. */
+  grid-template-columns: repeat(auto-fill, minmax(30rem, 1fr));
 }
 
+/* To space the selected columns to a span of 2 columns (whole line in this case) */
 li:nth-of-type(3) {
   grid-column: 1 / span 2;
 }
@@ -47,6 +51,7 @@ li:nth-of-type(9) {
   grid-column: 1 / span 2;
 }
 
+/* Flex container */
 main li {
   display: flex;
   background-color: white;
@@ -91,6 +96,7 @@ li img:hover {
   transform: translate(1rem, 0);
 }
 
+/* 1400px breakpoint for some styling issues */
 @media (max-width: 90rem) {
   main li img {
     width: 12rem;
@@ -109,6 +115,7 @@ li img:hover {
   }
 }
 
+/* Portrait mode (768px) */
 @media (max-width: 48rem) {
   main ul {
     width: 95%;
@@ -132,6 +139,7 @@ li img:hover {
 }
 }
 
+/* smaller portrait modes for styling issues */
 @media (max-width: 32rem) {
   main ul {
     grid-template-columns: none;
