@@ -53,7 +53,7 @@ main li img {
 }
 
 .actions a {
-    color: var(--color-links-900);
+    color: var(--color-links-700);
     border-radius: 6px;
     padding: 0.4rem;
 }

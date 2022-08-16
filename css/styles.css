@@ -11,7 +11,7 @@ html{
 
 #hero-content{
     text-align: center;
-    width: 50rem;
+    max-width: 50rem;
     background-color: #332f2fcc;
     border-radius: 8px;
     padding: 3.1rem 0;
@@ -32,12 +32,12 @@ html{
     font-size: 1.3rem;
     color: white;
     text-transform: uppercase;
-    margin-bottom: 30px;
+    margin-bottom: 1.9rem;
     font-weight: 300;
 }
 
 #hero-content a {
-    font-size: 20px;
+    font-size: 1.3rem;
     font-weight: bold;
     color: black;
     background-color: gold;
@@ -67,10 +67,15 @@ html{
 }
 
 #destinations{
-    display: flex;
+    /* Changed to grid as it allows me to very easily make the layout responsive */
+    display: grid;
+    gap: 2rem;
+    grid-auto-rows: 15rem;
+    /* Life saver code */
+    grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+    
     width: 95%;
     margin: auto;
-    justify-content: space-evenly;
     margin-bottom: 3rem;
 }
 
@@ -102,4 +107,28 @@ html{
     color: black;
     padding: 0.13rem 0;
     border-radius: 5px;
+}
+
+/* Portrait mode */
+@media (max-width: 48rem){
+
+    #hero-content{
+        
+    }
+
+    #hero-content h1{
+        font-size: 2rem;
+    }
+
+    #hero-content p{
+        font-size: 0.9rem;
+    }
+
+    #hero-content a{
+        font-size: 1rem;
+    }
+
+    #highlights h2{
+        font-size: 2.5rem;
+    }
 }
