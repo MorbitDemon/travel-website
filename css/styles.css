@@ -8,6 +8,7 @@ html{
     background-image: url("../images/places/background.jpg");
     background-position: center;
     background-size: cover;
+    min-height: 100vh;
 }
 
 #hero-content{

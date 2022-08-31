@@ -126,6 +126,10 @@ li img:hover {
     width: 8rem;
   }
 
+  li img:hover {
+    transform: none;
+  }
+
   .item-content {
     padding: 0.5rem 0 0.5rem 0.5rem;
   }
